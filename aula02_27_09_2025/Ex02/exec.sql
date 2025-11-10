@@ -1,3 +1,5 @@
+USE juliaostore;
+
 -- Lista de todos os clientes cadastrados
 SELECT * FROM Clientes;
 
