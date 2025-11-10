@@ -1,29 +1,30 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
-def soma (x, y):
+def soma(x, y):
     return x + y
 
-def subt (x, y):
+def subt(x, y):
     return x - y
 
-def mult (x, y):
+def mult(x, y):
     return x * y
 
-def div (x, y):
+def div(x, y):
     return x / y
 
 if __name__ == "__main__":
     try:
-        x = float(input("Digite o primeiro numero: "))
-        y = float(input("Digite o segundo numero: "))
+        x = float(input("Digite o primeiro número: "))
+        y = float(input("Digite o segundo número: "))
 
-        print(x, "+", y, "=", soma(x, y))
-        print(x, "-", y, "=", subt(x, y))
-        print(x, "x", y, "=", mult(x, y))
+        print(f"{x} + {y} = {soma(x, y)}")
+        print(f"{x} - {y} = {subt(x, y)}")
+        print(f"{x} x {y} = {mult(x, y)}")
+
         if y == 0:
-            print(x, "/", y, "=", "Erro")
+            print(f"{x} / {y} = Erro (divisão por zero)")
         else:
-            print(x, "/", y, "=", div(x, y))
+            print(f"{x} / {y} = {div(x, y)}")
 
-    except:
-        print("Erro de caractere, insira apenas numeros inteiros ou float")
+    except ValueError:
+        print("Erro: insira apenas números inteiros ou float.")

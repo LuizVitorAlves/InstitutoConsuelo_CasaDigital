@@ -50,9 +50,6 @@
 - Use `json.dump(dicionario, arquivo, indent=2)` para **escrever o JSON no arquivo** com **2 espaços de indentação**.
 
 > ⚠️ Observação: se o arquivo já existir, ele será sobrescrito.
-> 
-
----
 
 ### **Passo 6:**
 
